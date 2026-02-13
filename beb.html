@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Memories</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Background Image */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('frontbeb.jpg') center top /cover no-repeat;
+      opacity: 0.6; /* 🔥 adjust transparency here */
+      z-index: -2;
+    }
+
+    /* Dark overlay for readability */
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+      z-index: -1;
+    }
+
+    .hero-content small {
+      letter-spacing: 4px;
+      font-size: 14px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 72px;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+
+    .hero-content .date {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: white;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #f2f2f2;
+      transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <small>HAPPY VALENTINES DAY</small>
+      <h1>Our Memories</h1>
+      <div class="date">06–21–2025</div>
+      <a href="page2.html" class="btn">CLICK HERE</a>
+    </div>
+  </section>
+</body>
+</html>
